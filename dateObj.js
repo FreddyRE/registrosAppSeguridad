@@ -1,0 +1,43 @@
+class DatesToWork {
+    constructor() {
+        this.completeDate = new Date()
+    } 
+
+    getDay() {
+        return this.completeDate.getDate()
+    }
+
+    getYear() {
+        return this.completeDate.getFullYear();
+    }
+    getMonthString() {
+        switch(this.completeDate.getMonth()) {
+            case 0: return "Enero"
+            break
+            case 1: return "Febrero"
+            break
+            case 2 : return "Marzo";
+            break
+            case 3 : return "Abril";
+            break
+            case 4 : return "Mayo";
+            break
+            case 5 : return "Junio";
+            break
+            case 6 : return "Julio";
+            break
+            case 7 : return "Agosto";
+            break
+            case 8 : return "Septiembre";
+            break
+            case 9 : return "Octubre";
+            break
+            case 10 : return "Noviembre";
+            break
+            case 11 : return "Diciembre";
+            break
+        }
+    }
+
+
+} 
